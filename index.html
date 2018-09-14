@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Giftastic</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class="titleimgstyle" src="assets/images/500.gif" alt="">
+            <div id="animTitle">
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Select Gif limit
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">5</a>
+                            <a class="dropdown-item" href="#">10</a>
+                            <a class="dropdown-item" href="#">15</a>
+                            <a class="dropdown-item" href="#">20</a>
+                            <a class="dropdown-item" href="#">25</a>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="text" class="form-control" value="Default 10" aria-describedby="inputGroup-sizing-sm" id="vl" />
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input id="userText" class="form-control mx-2" type="search" placeholder="New GIF" aria-label="Add New gif">
+                    <button id="btnAdd" class="btn btn-outline-success my-2 my-sm-0" type="submit">Add New giphy button</button>
+                </form>
+            </div>
+        </nav>
+        <hr id="hrstyle">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul id="userList" class="sidebar-nav">
+            </ul>
+        </div>
+
+        <!-- page content -->
+        <div id="helpwrapper">
+            <div class="container-fluid">
+                <div id="helpArea">
+                    <h1>Add new gif using Add new button</h1>
+                    <h2>Click the newly added button to fetch animated gifs</h2>
+                    <h3>Optionally set the Gif limit preference using the above dropdown</h3>
+                    <h3>Hover over the images to see the Gif animation effect and rating</h3>
+                    <h3>Enjoy!!!</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="pagesetup" class="justify-content-center">
+            <nav>
+                <ul class="pagination">
+                </ul>
+            </nav>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div id="gifArea" class="row">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/giftastic.js"></script>
+
+</body>
+
+</html>

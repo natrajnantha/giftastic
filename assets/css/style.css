@@ -1,0 +1,98 @@
+/* body background style */
+body { 
+    background-image: url("../images/dback.jpg");
+    background-size: cover;
+}
+
+/* Side bar wrapper styling. This is the area where the user buttons are appended to */
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    width: 250px;
+    border-right: 6px solid darkcyan;
+}
+
+#page-content-wrapper{
+    width: 100%;
+    position: relative;
+    padding-left: 250px;
+    padding-top: 5px;
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+    width: 200px;
+}
+
+.sidebar-nav li{
+    text-indent: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+.sidebar-nav li a{
+    display: block;
+    text-decoration: none;
+
+}
+
+.sidebar-nav li a:hover{
+    background: #16A085;
+}
+
+.userBtnClass {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+    display: inline-grid;
+    margin-left: 20px;
+    background-color: #1D8495;
+    margin-top:10px;
+}
+
+.imgstyle {
+    width: 120px;
+    height: 100px;
+    padding: 0px 0px 0 0;
+    border: 3px solid beige;
+    margin: 11px 0px 0px 0px;
+}
+
+.titleimgstyle {
+    width: 100px;
+    height: 60px;
+    padding: 0px 0px 0 0px;
+    margin: 0 20px 0 20px;
+    opacity: 0.8;
+}
+
+.body {
+    background-color: #1D8495;
+
+}
+
+#hrstyle {
+    background-color: SKYBLUE;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+}
+
+/* Help message area styling. This area displays the user help on load and then clears when the user starts adding gif search buttons */
+#helpArea {
+    text-align: center;
+    margin: 300px 0px 0 200px;
+    color: greenyellow;
+}
+
+#pagesetup {
+    margin: 10px 0px 0px 850px;
+    position: static;
+}
